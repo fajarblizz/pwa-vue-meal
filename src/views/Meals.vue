@@ -1,20 +1,20 @@
 <template>
   <div class="container">
-    <Navbar />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Meals />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
-import Category from '@/components/Category.vue';
+import Meals from '@/components/Meals.vue';
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
-    Category
+    Meals
+    
   }
 }
 </script>
