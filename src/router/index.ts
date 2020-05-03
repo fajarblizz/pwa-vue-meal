@@ -4,6 +4,8 @@ import Home from '../views/Home.vue';
 import Area from '../views/Area.vue';
 import Meals from '../views/Meals.vue';
 import Category from '../views/Category.vue';
+import Detail from '../components/Detail.vue';
+import Cate from '../components/IsiCategory.vue';
 
 
 Vue.use(VueRouter);
@@ -34,8 +36,18 @@ const routes: RouteConfig[] = [
   },
   {
     path: '/category',
-    name: 'Cateory',
+    name: 'Category',
     component: Category,
+  },
+  {
+    path: '/detail/:id',
+    name: 'Detail',
+    component: Detail,
+  },
+  {
+    path: '/list-category/:id',
+    name: 'Come',
+    component: Cate
   },
 ];
 
