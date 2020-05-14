@@ -6,6 +6,7 @@ import Meals from '../views/Meals.vue';
 import Category from '../views/Category.vue';
 import Detail from '../components/Detail.vue';
 import Cate from '../components/IsiCategory.vue';
+import Search from '../components/Search.vue';
 
 
 Vue.use(VueRouter);
@@ -38,6 +39,11 @@ const routes: RouteConfig[] = [
     path: '/category',
     name: 'Category',
     component: Category,
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search,
   },
   {
     path: '/detail/:id',
